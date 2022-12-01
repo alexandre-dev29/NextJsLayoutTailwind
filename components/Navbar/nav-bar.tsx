@@ -1,7 +1,8 @@
 import React from "react";
 import { AcmeLogo } from "./custom-logo";
+import { NavSideBarProps } from "../../types";
 
-const NavBar = ({ sidebarWidth, navBarHeight }: { sidebarWidth: number; navBarHeight: number }) => {
+const NavBar = ({ sidebarWidth, navBarHeight }: NavSideBarProps) => {
   return (
     <div
       className={`shadow-md bg-white min-h-[40px] flex items-center `}

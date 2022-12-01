@@ -17,7 +17,9 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
 
         <div className={"w-full flex"}>
           <Sidebar sidebarWidth={sideBardWidth} navBarHeight={navBarHeight} />
-          <main className={"p-4"}>{children}</main>
+          <main className={"p-4 w-full h-full "} style={{ height: `${100 - navBarHeight}vh` }}>
+            {children}
+          </main>
         </div>
       </div>
     </div>
